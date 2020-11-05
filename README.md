@@ -1,6 +1,6 @@
-#PAYO_ASSIGNMENT_FOR_ANDROID_INTERNSHIP
-##Name: Prajata_Samanta
-##GitHub Link: https://github.com/Prajata22/PayO_Assignment
+# PAYO_ASSIGNMENT_FOR_ANDROID_INTERNSHIP
+## Name: Prajata_Samanta
+## GitHub Link: https://github.com/Prajata22/PayO_Assignment
 
 ## Main features
 * Sign up with all the credentials required. All credentials are mandatory
