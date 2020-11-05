@@ -13,7 +13,7 @@
 * A toast is shown along with a graphic in case of api failure
 * The list is displayed in ascending order based on first name and last name separately for both pages
 * On long clicking an item, an alert dialog is shown asking for confirmation to delete it. On pressing delete the item is removed from the list
-* Insted of a progress bar, a shimmer effect is given to the recycler view while loading api
+* Instead of a progress bar, a shimmer effect is given to the recycler view while loading api
 * From the navigation drawer, own profile can be visited
 * From the navigation drawer, on clicking log out there is a confirmation dialog to log out. On clicking log out, user will be redirected to login screen
 * All kinds of form validations are present both in login screen as well as sign up screen in the form of toasts and animations
