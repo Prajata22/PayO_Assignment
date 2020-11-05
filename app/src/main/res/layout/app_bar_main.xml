@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_baseline_menu_24"
+        android:background="?attr/colorPrimaryDark"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:shimmer_repeat_mode="restart"
+                android:background="@color/grey"
+                android:paddingTop="8dp"
+                app:shimmer_shape="radial">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/shimmer_layout" />
+                    <include layout="@layout/shimmer_layout" />
+                    <include layout="@layout/shimmer_layout" />
+                    <include layout="@layout/shimmer_layout" />
+                    <include layout="@layout/shimmer_layout" />
+                    <include layout="@layout/shimmer_layout" />
+                    <include layout="@layout/shimmer_layout" />
+                    <include layout="@layout/shimmer_layout" />
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:layout_marginTop="8dp"
+                android:descendantFocusability="blocksDescendants"
+                app:reverseLayout="false"/>
+
+            <ProgressBar
+                android:id="@+id/progress_more"
+                android:layout_below="@id/recycler_list"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/no_data"
+                android:layout_width="match_parent"
+                android:src="@drawable/no_data"
+                android:visibility="gone"
+                android:layout_marginTop="300dp"
+                android:layout_centerInParent="true"
+                android:layout_height="250dp"/>
+
+            <ImageView
+                android:id="@+id/error"
+                android:layout_width="match_parent"
+                android:src="@drawable/error"
+                android:visibility="gone"
+                android:layout_marginTop="300dp"
+                android:layout_centerInParent="true"
+                android:layout_height="250dp"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

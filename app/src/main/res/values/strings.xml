@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">PayO_Assignment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="login">Login</string>
+    <string name="logout">Log Out</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="don_t_have_an_account_yet">Don\'t have an account yet?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name :</string>
+    <string name="email">Email :</string>
+    <string name="contact_no">Contact No. :</string>
+    <string name="address">Address :</string>
+    <string name="profile">Profile</string>
+    <string name="please_fill_in_your_details">Please fill in your details</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last Name</string>
+    <string name="contact_number">Contact number</string>
+    <string name="address_line">Address Line</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="proceed">Proceed</string>
+    <string name="from">from</string>
+    <string name="prajata_samanta">Prajata Samanta</string>
+    <string name="id_1">ID : 1</string>
+    <string name="email_prajata_samanta_gmail_com">Email : prajata.samanta@gmail.com</string>
+    <string name="made_by_prajata_samanta">Made by Prajata Samanta</string>
+    <string name="hang_on_your_profile_looks_awesome">Hang on. Your profile looks awesome...</string>
+</resources>
