@@ -32,6 +32,8 @@ import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.android.material.navigation.NavigationView;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Objects;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -133,8 +135,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 mRecyclerView.setVisibility(View.VISIBLE);
                 error.setVisibility(View.GONE);
 
-                ArrayList<UserModel> tempList = new ArrayList<>(response.body().getData());
-                if(tempList != null && tempList.size() > 0) {
+                ArrayList<UserModel> tempList = new ArrayList<>(Objects.requireNonNull(response.body()).getData());
+                if(tempList.size() > 0) {
                     no_data.setVisibility(View.GONE);
                     main_layout.setBackgroundColor(getResources().getColor(R.color.grey));
 
@@ -149,8 +151,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     call2.enqueue(new Callback<DataModel>() {
                         @Override
                         public void onResponse(@NonNull Call<DataModel> call, @NonNull Response<DataModel> response) {
-                            ArrayList<UserModel> tempList = new ArrayList<>(response.body().getData());
-                            if(tempList != null && tempList.size() > 0) {
+                            ArrayList<UserModel> tempList = new ArrayList<>(Objects.requireNonNull(response.body()).getData());
+                            if(tempList.size() > 0) {
                                 more = true;
                                 lastSize = userModelArrayList.size();
 
